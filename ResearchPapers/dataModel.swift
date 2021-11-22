@@ -21,5 +21,5 @@ struct techReport : Decodable {
 }
 
 struct technicalReports : Decodable {
-    let techReports2 : [techReport]
+    let techreports2 : [techReport]
 }
