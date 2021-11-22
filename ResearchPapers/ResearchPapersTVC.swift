@@ -34,15 +34,22 @@ class ResearchPapersTVC: UITableViewController {
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return reports?.techreports2.count ?? 0
     }
     
     func updateTheTable(){
-        print(reports?.techreports2.count ?? 0)
+        theTable.reloadData()
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = theTable.dequeueReusableCell(withIdentifier: "theCell", for: indexPath)
+        cell.textLabel?.text = reports?.techreports2[indexPath.row].title ?? "no title"
+        cell.detailTextLabel?.text = reports?.techreports2[indexPath.row].authors ?? "no author"
+        return cell
     }
     
     @IBOutlet var theTable: UITableView!
