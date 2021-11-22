@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ResearchPapers
 //
-//  Created by Ilkin Samedzade on 22/11/2021.
+//  Created by Joao Garrido on 22/11/2021.
 //
 
 import UIKit
