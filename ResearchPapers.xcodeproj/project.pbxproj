@@ -14,6 +14,7 @@
 		95C75C0C274C5810003D680C /* ResearchPapers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95C75C0A274C5810003D680C /* ResearchPapers.xcdatamodeld */; };
 		95C75C0E274C5813003D680C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C75C0D274C5813003D680C /* Assets.xcassets */; };
 		95C75C11274C5813003D680C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C75C0F274C5813003D680C /* LaunchScreen.storyboard */; };
+		95C75C19274C5911003D680C /* ResearchPapersTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C75C18274C5911003D680C /* ResearchPapersTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		95C75C0D274C5813003D680C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95C75C10274C5813003D680C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95C75C12274C5813003D680C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C75C18274C5911003D680C /* ResearchPapersTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchPapersTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +63,10 @@
 				95C75C01274C5810003D680C /* AppDelegate.swift */,
 				95C75C03274C5810003D680C /* SceneDelegate.swift */,
 				95C75C05274C5810003D680C /* ViewController.swift */,
-				95C75C07274C5810003D680C /* Main.storyboard */,
-				95C75C0D274C5813003D680C /* Assets.xcassets */,
 				95C75C0F274C5813003D680C /* LaunchScreen.storyboard */,
+				95C75C07274C5810003D680C /* Main.storyboard */,
+				95C75C18274C5911003D680C /* ResearchPapersTVC.swift */,
+				95C75C0D274C5813003D680C /* Assets.xcassets */,
 				95C75C12274C5813003D680C /* Info.plist */,
 				95C75C0A274C5810003D680C /* ResearchPapers.xcdatamodeld */,
 			);
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95C75C06274C5810003D680C /* ViewController.swift in Sources */,
+				95C75C19274C5911003D680C /* ResearchPapersTVC.swift in Sources */,
 				95C75C02274C5810003D680C /* AppDelegate.swift in Sources */,
 				95C75C04274C5810003D680C /* SceneDelegate.swift in Sources */,
 				95C75C0C274C5810003D680C /* ResearchPapers.xcdatamodeld in Sources */,
