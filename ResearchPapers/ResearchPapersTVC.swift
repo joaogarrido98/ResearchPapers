@@ -9,6 +9,7 @@ import UIKit
 
 class ResearchPapersTVC: UITableViewController {
     var reports : technicalReports? = nil
+    var index = -1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,24 @@ class ResearchPapersTVC: UITableViewController {
         cell.textLabel?.text = reports?.techreports2[indexPath.row].title ?? "no title"
         cell.detailTextLabel?.text = reports?.techreports2[indexPath.row].authors ?? "no author"
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "toDetail"){
+            let destination = segue.destination as! ViewController
+            let selectedRow = theTable.indexPathForSelectedRow!.row
+            let data = reports?.techreports2[selectedRow]
+            destination.titles = data?.title
+            destination.year = data?.year
+            destination.authors = data?.authors
+            destination.email = data?.email
+            destination.abstract = data?.abstract
+            destination.url = data?.pdf
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toDetail", sender: self)
     }
     
     @IBOutlet var theTable: UITableView!
